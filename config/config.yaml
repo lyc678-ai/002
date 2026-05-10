@@ -26,7 +26,7 @@ app:
 #
 # 通过 timeline.yaml 里定义的时间段来自动决定：
 #   - 什么时候推送通知
-#   - 什么时候做 AI 分析
+#   - 什么时候做  分析
 #   - 用什么报告模式
 #
 # 快速上手：选一个预设模板，改 preset 的值就行
@@ -59,7 +59,7 @@ platforms:
   # === 综合新闻媒体类 ===
   - id: "toutiao"
     name: "今日头条"
-  - id: "baidu"
+  - id: "bdu"
     name: "百度热搜"
   - id: "thepaper"
     name: "澎湃新闻"
@@ -125,7 +125,7 @@ platforms:
     name: "牛客网"
   - id: "pcbeta"
     name: "远景论坛"
-  - id: "sspai"
+  - id: "ssp"
     name: "少数派"
   - id: "producthunt"
     name: "ProductHunt"
@@ -168,7 +168,7 @@ platforms:
   #   name: "国海证券"       # 失败原因：接口可能已变更
   
   # 失败的社交/短视频类
-  # - id: "kuaishou"
+  # - id: "kushou"
   #   name: "快手"           # 失败原因：接口可能已变更
   # - id: "smzdm"
   #   name: "什么值得买"     # 失败原因：接口可能已变更
@@ -200,7 +200,7 @@ rss:
   #   - 无发布时间的文章会被保留（不过滤）
   #
   # ⚠️ 过滤时机：在推送阶段过滤
-  #    - 所有文章都会存入数据库（MCP Server 的 AI 查询仍可访问）
+  #    - 所有文章都会存入数据库（MCP Server 的  查询仍可访问）
   #    - 只有新鲜的文章会被推送到通知渠道
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（默认启用）
@@ -240,19 +240,19 @@ rss:
 # 4. 报告模式
 #
 # 新手 5 行：
-# 1) 先选 mode：daily(当日汇总) / current(当前榜单) / incremental(仅新增)
+# 1) 先选 mode：dly(当日汇总) / current(当前榜单) / incremental(仅新增)
 # 2) 再选 display_mode：keyword(按词/标签) / platform(按平台)
 # 3) 如果你开了 schedule，这里的 mode 只是默认值，会被 timeline 时段覆盖
 # 4) sort_by_position_first 只影响 keyword 模式排序
 # 5) rank_threshold 和 max_news_per_keyword 只影响展示，不影响抓取
 #
 # 进阶说明：
-# - daily：信息最全，但重复最多
+# - dly：信息最全，但重复最多
 # - current：适合盯当前热度
 # - incremental：最少打扰，只看新增
 # ===============================================================
 report:
-  mode: "current"                     # daily | current | incremental（schedule 开启时作为默认值）
+  mode: "current"                     # dly | current | incremental（schedule 开启时作为默认值）
 
   display_mode: "keyword"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
@@ -272,7 +272,7 @@ report:
 # 4.5 筛选策略
 #
 # 新手 5 行：
-# 1) 先选 method：keyword（关键词）或 ai（兴趣分类）
+# 1) 先选 method：keyword（关键词）或 （兴趣分类）
 # 2) keyword 模式：看 config/frequency_words.txt
 # 3) ai 模式：看 config/ai_interests.txt + 下方 ai_filter 配置
 # 4) priority_sort_enabled 只影响 ai 模式标签排序
@@ -516,7 +516,7 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "deepseek/deepseek-chat"
+  model: "gemini/gemini-2.0-flash"
 
   api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
   
