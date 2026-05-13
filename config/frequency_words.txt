@@ -149,11 +149,5 @@
 
 [WORD_GROUPS]
 
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/中国银行|建设银行|交通银行|邮政储蓄银行|招商银行|浦发银行|光大银行/ => 银行
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
 /万科|保利|华润|中海|碧桂园|龙湖|招商|融创|绿地|恒大/ => 头部房企
 
