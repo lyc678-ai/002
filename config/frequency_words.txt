@@ -149,7 +149,7 @@
 
 [WORD_GROUPS]
 
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
+/万科|保利|华润|中海|碧桂园|龙湖|招商|融创|绿地|恒大/ => 房地产
 
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
+/金地|新城|旭辉|阳光城|金科|雅居乐|中梁|奥园|远洋|正荣/ => 南宁房开
 
